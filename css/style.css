@@ -1,0 +1,79 @@
+:root {
+  --header-fonts: "Nerko One";
+  --main-fonts: "Comfortaa";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-fonts);
+}
+.navbar-brand span{
+    font-family: var(--header-fonts);
+    line-height: 30px;
+    font-size:30px;
+}
+body {
+  background-color: #272b30;
+    font-family: var(--main-fonts);
+}
+header {
+  background: linear-gradient(
+      to right,
+      hsla(213, 10%, 17%, 0.6),
+      hsla(213, 10%, 17%, 0.6)
+    ),
+    url("../images/wraper.png") no-repeat;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.nav-link {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  font-size: .7656rem;
+  line-height: 1.1481rem;
+}
+nav {
+  background-color: #3a497b;
+  position: sticky !important;
+  top: 30px;
+  transform: translateY(-50%);
+  
+}
+.card-text{
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    font-family: var(--main-fonts);
+}
+.card-body span{
+    background-color: #4A6792 ;
+}
+.card-footer{
+    background-color: #272B2F;
+}
+.card-footer span{
+    font-size: .6563rem;
+    font-weight: 700;
+    line-height: .6563rem;
+    background-color: #363739;
+}
+.card-img img{
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+#home .card{
+  transition: all 0.5s;
+}
+#home .card:hover{
+  transform: scale(1.05,1.05);
+}
+#home .card:hover .card-img img{
+  filter: grayscale(0);
+}
+.navbar-nav .nav-link.active{
+  color:#0099CC ;
+}
